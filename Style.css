@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;             /* Centraliza o texto */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;                    /* Texto branco */
+  background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+  backdrop-filter: blur(10px);    /* Efeito de vidro fosco */
+  -webkit-backdrop-filter: blur(10px); /* Compatibilidade Safari */
+  padding: 20px;
+  position: fixed;                /* Fixa no topo */
+  top: 0;
+  left: 0;
+  width: 100%;                    /* Ocupa toda a largura */
+  z-index: 1000;                  /* Fica acima dos outros elementos */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;       /* Permite empilhar header e container */
+}
+
+..login-container {
+  background: #ebe0e0;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-top: 120px; /* Espaço para não sobrepor o header */
+}
+form {
+  margin-bottom: 1.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.3rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #acd4f3;
+  border:#ebe0e0;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
